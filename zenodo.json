@@ -1,0 +1,24 @@
+{
+    "title": "Wisconsin Breast Cancer Analysis Final Project",
+    "description": "Analysis and creation of reproducible and accurate results",
+    "creators": [
+        {
+            "name": "Malavia, Jay",
+            "orcid": "0000-0002-0798-4033"
+        },
+        {
+            "name": "Nasanbuyan, Angel",
+            "orcid": "0000-0008-2955-0918"
+        }
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": "https://doi.org/10.0000/00000",
+            "relation": "cites"
+        }
+    ],
+    "access_right": "open",
+    "upload_type": "software",
+    "license": "MIT"
+}

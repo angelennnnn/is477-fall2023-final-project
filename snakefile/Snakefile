@@ -1,0 +1,24 @@
+
+rule prepare:
+    output:
+        "results/prepared_output1.txt",
+        "results/prepared_output2.txt"
+    shell:
+        "python scripts/prepare_data.py"
+
+rule profile:
+    input:
+        "results/prepared_output1.txt",
+        "results/prepared_output2.txt"
+    output:
+        "results/profile_output.txt"
+    shell:
+        "python scripts/profile.py"
+
+rule analyze:
+    input:
+        "results/profile_output.txt"
+    output:
+        "results/analysis_output.txt"
+    shell:
+        "python scripts/analyze.py"
