@@ -14,9 +14,9 @@
     "related_identifiers": [
         {
             "scheme": "doi",
-            "identifier": "https://doi.org/10.0000/00000",
+            "identifier": "https://doi.org/10.24432/C5DW2B",
             "relation": "cites"
-        }
+        } 
     ],
     "access_right": "open",
     "upload_type": "software",
