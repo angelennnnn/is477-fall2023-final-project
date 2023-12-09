@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 
-df = pd.read_csv(r'C:\Users\Angel\Desktop\IS477-finalproject\data\breast_cancer_wisconsin\breast_cancer_wisconsin.csv')
+df = pd.read_csv('C:/Users/Angel/Desktop/IS477-finalproject/data/breast_cancer_wisconsin/breast_cancer_wisconsin.csv')
 summary_stats = df.describe()
 summary_stats.to_csv('results/summary_statistics.csv')
 

@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+analyze          1
+profile          1
+reproduce        1
+total            3
+
+Select jobs to execute...
+
+[Fri Dec  8 19:41:57 2023]
+rule analyze:
+    input: data/breast_cancer_wisconsin/breast_cancer_wisconsin.csv
+    output: results/analysis_output.png
+    jobid: 1
+    reason: Missing output files: results/analysis_output.png
+    resources: tmpdir=C:\Users\Angel\AppData\Local\Temp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule analyze in file C:\Users\Angel\Desktop\IS477-finalproject\Snakefile, line 15:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/analysis_output.png
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2023-12-08T194156.700549.snakemake.log

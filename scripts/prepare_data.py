@@ -21,13 +21,13 @@ else:
 
 import hashlib
 
-filename = r'C:\Users\Angel\Desktop\IS477-finalproject\data\breast_cancer_wisconsin\breast_cancer_wisconsin.csv'
+filename_breast = 'C:/Users/Angel/Desktop/IS477-finalproject/data/breast_cancer_wisconsin/breast_cancer_wisconsin.csv'
 
-with open(filename, 'rb') as f:
+with open(filename_breast, 'rb') as f:
     data = f.read()
     sha256hash = hashlib.sha256(data).hexdigest()
 
-breast_sha_256 = '19cce5f6dba53d0e42fb63aed47f9603c6e88267e86534896cebe48e63f63062'
+breast_sha_256 = 'ab7fcac70c8f5c895d92f2352066dec09f2dcb19ea3f4bfb44ec6973546032c7'
 if breast_sha_256 != sha256hash:
     print("Computed hash does not match expected hash")
 else:

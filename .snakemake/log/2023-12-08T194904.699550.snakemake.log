@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule reproduce in file C:\Users\Angel\Desktop\IS477-finalproject\Snakefile, line 26:
+Missing input files for rule reproduce:
+    output: results/reproducibility_check.txt
+    affected files:
+        profiling/profiling.html

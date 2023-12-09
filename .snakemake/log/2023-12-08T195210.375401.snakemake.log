@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+profile          1
+reproduce        1
+total            2
+
+Select jobs to execute...
+
+[Fri Dec  8 19:52:10 2023]
+rule profile:
+    input: data/breast_cancer_wisconsin/breast_cancer_wisconsin.csv
+    output: profiling/report.html
+    jobid: 3
+    reason: Updated input files: data/breast_cancer_wisconsin/breast_cancer_wisconsin.csv
+    resources: tmpdir=C:\Users\Angel\AppData\Local\Temp
+
+[Fri Dec  8 19:57:25 2023]
+Finished job 3.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Dec  8 19:57:25 2023]
+rule reproduce:
+    input: results/summary_statistics.csv, results/classification_report.txt, results/confusion_matrix.csv, results/feature_importances.png, profiling/report.html
+    output: results/reproducibility_check.txt
+    jobid: 0
+    reason: Input files updated by another job: profiling/report.html
+    resources: tmpdir=C:\Users\Angel\AppData\Local\Temp
+
+[Fri Dec  8 19:57:25 2023]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake\log\2023-12-08T195210.375401.snakemake.log
