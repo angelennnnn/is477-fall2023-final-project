@@ -5,12 +5,15 @@ Python Version: 3.9.6
 Build Version: 22D68
 # Overview
 
-This document outlines the process of reproducing the results of Wolberg et al (2022) using the UCI Machine Learning Repository's Breast Cancer Wisconsin Diagnostic dataset. The document details the data availability, software license, data license, reproducibility, and analysis of the study.
+This document outlines the process of reproducing the results of Wolberg et al (2022) using the UCI Machine Learning Repository's Breast Cancer Wisconsin Diagnostic dataset. The document details the data availability, software license, data license, reproducibility, and analysis of the study. This document contains a reproducible work flow for data analysis on the project, and the structure can be used and recreated. 
 
 ## Data Availability
 
 **Source:**  
 UCI Machine Learning Repository - Breast Cancer Wisconsin Diagnostic dataset: [UCI Repository](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
+This is the origin of where the data was fine from. It is the Wisconsin Breast Cancer Diagonstic dataset. The copyright and licensing of this under the UCI Adult dataset license is identified - CC By 4.0. This makes it so that you are able to share, adapt, and modify the dataset. You just need to make sure that you credit the original authors of the dataset. Attribution is required for the dataset usage. 
+
+Becker,Barry and Kohavi,Ronny. (1996). Adult. UCI Machine Learning Repository. https://doi.org/10.24432/C5XW20.
 
 **Copyright and Licensing:** Public domain (no copyright)
 
